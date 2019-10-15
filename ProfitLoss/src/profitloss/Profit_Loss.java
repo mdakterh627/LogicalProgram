@@ -19,21 +19,15 @@ public class Profit_Loss {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the cost price: ");
-        float cost = sc.nextFloat();
-        System.out.println("Enter the sell price: ");
-        float sell = sc.nextFloat();
+        System.out.println("Enter the Apple price: ");
+        float sell1 = sc.nextFloat();
+        System.out.println("Enter the Mango price: ");
+        float sell2 = sc.nextFloat();
         
-        float PriceDifference = sell-cost;
-        if (cost<sell){
-            System.out.println("Your Profit of: "+ PriceDifference);
-        }else if(cost==sell){
-            System.out.println("No profit or loss");
-        }else{
-        System.out.println("Your loss of: "+ PriceDifference);
+        System.out.println("Total Apple profit: "+ (sell1*10)*7.5/100);
+        System.out.println("Total Mango profit: "+ (sell2*5)*10/100);
         
-    
-    }
+   
     }
     
 }
